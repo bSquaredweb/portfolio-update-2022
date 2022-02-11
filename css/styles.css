@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Font-awesome-light;
+  src: url(../fontawesome/Font\ Awesome\ 5\ Pro-Light-300.otf);
+}
 /* document */
 body {
   font-family: "Poppins Light", sans-serif;
@@ -7,10 +11,6 @@ body {
 h1, h2 {
   font-family: "Poppins Semibold", sans-serif;
   font-weight: 600;
-}
-
-i {
-  font-size: 20px;
 }
 
 #page-container {
@@ -60,10 +60,22 @@ li.nav-item {
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
   color: #2c306f;
+  font-weight: 600;
+  font-family: "Poppins Semibold", sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: #2c306f;
+}
+
+.navbar-light .navbar-toggler {
+  color: #2c306f;
+  border-color: transparent;
+  font-size: 24px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 /* main */
@@ -87,6 +99,25 @@ li.nav-item {
   border-top: 1px solid rgba(41, 41, 41, 0.2);
   border-bottom: 1px solid rgba(41, 41, 41, 0.2);
 }
+.recent-work h2 {
+  margin-top: 24px;
+}
+
+.text-side {
+  align-self: center;
+}
+
+.bubble {
+  display: inline-block;
+  background-color: #a5e4dc;
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-size: 12px;
+  margin: 0 2px;
+}
+.bubble:first-of-type {
+  margin-left: 0;
+}
 
 /* footer */
 footer {
@@ -109,6 +140,9 @@ footer a i {
 footer a i:hover {
   color: #ffd048;
 }
+footer i {
+  font-size: 20px;
+}
 
 /* media queries */
 @media (min-width: 776px) {
@@ -116,6 +150,10 @@ footer a i:hover {
     margin: 5rem auto;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+  }
+
+  .recent-work h2 {
+    margin-top: 0;
   }
 }
 @media (min-width: 992px) {
