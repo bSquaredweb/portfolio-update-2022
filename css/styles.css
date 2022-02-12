@@ -13,6 +13,14 @@ h1, h2 {
   font-weight: 600;
 }
 
+.h3, h3 {
+  font-size: calc(1.1rem + 0.6vw);
+}
+
+.h4, h4 {
+  font-size: calc(1rem + 0.2vw);
+}
+
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -30,7 +38,7 @@ h1, h2 {
 .btn.btn-primary:hover {
   background-color: #ffd048;
   border-color: #ffd048;
-  color: #292929;
+  color: #2c306f;
 }
 .btn.btn-outline-secondary {
   color: #2c306f;
@@ -41,6 +49,23 @@ h1, h2 {
   border-color: #2c306f;
   background-color: #2c306f;
 }
+.btn.btn-icon {
+  display: inline-flex;
+}
+.btn.btn-icon i {
+  font-size: 22px;
+  padding-left: 6px;
+  display: flex;
+  align-self: flex-end;
+}
+
+.row-spacer {
+  margin-top: 1rem;
+}
+
+.extra-p-margin {
+  margin-bottom: 1.3rem;
+}
 
 /* header */
 header {
@@ -50,6 +75,12 @@ header {
 li.nav-item {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.navbar {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: #ffd048;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -78,6 +109,11 @@ li.nav-item {
   box-shadow: none;
 }
 
+i#theIcon {
+  text-align: center;
+  width: 21px;
+}
+
 /* main */
 .hero {
   background-image: url("../images/background.png");
@@ -92,15 +128,18 @@ li.nav-item {
 }
 
 .recent-work .container {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.recent-work h2 {
+  margin-top: 16px;
 }
 .recent-work .middle-section {
   border-top: 1px solid rgba(41, 41, 41, 0.2);
   border-bottom: 1px solid rgba(41, 41, 41, 0.2);
 }
-.recent-work h2 {
-  margin-top: 24px;
+.recent-work img {
+  border-radius: 4px;
 }
 
 .text-side {
@@ -113,10 +152,52 @@ li.nav-item {
   border-radius: 100px;
   padding: 4px 12px;
   font-size: 12px;
-  margin: 0 2px;
+  margin: 8px 2px 0;
 }
 .bubble:first-of-type {
   margin-left: 0;
+}
+
+/* about page */
+.bio .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(41, 41, 41, 0.2);
+}
+.bio .title {
+  font-style: italic;
+  font-weight: 300;
+}
+.bio img {
+  border-radius: 4px;
+}
+.bio .about-text {
+  margin-top: 16px;
+}
+
+.resume .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.resume h3 {
+  font-weight: 600;
+  font-family: "Poppins Semibold", sans-serif;
+  color: #2c306f;
+  border-bottom: 2px solid #2c306f;
+  text-transform: uppercase;
+}
+.resume h4 {
+  margin-top: 24px;
+  margin-bottom: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.resume h4.first {
+  margin-top: 12px;
+}
+.resume .info p {
+  margin-bottom: 2px;
+  font-size: 13px;
 }
 
 /* footer */
@@ -154,6 +235,23 @@ footer i {
 
   .recent-work h2 {
     margin-top: 0;
+  }
+  .recent-work .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .bio .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .bio .about-text {
+    margin-top: 0;
+  }
+
+  .skills .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 @media (min-width: 992px) {

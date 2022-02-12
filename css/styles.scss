@@ -27,6 +27,12 @@ h1, h2 {
     font-family: $bold-font;
     font-weight: $bold-weight;
 }
+.h3, h3 {
+    font-size: calc(1.1rem + .6vw);
+}
+.h4, h4 {
+    font-size: calc(1rem + 0.2vw);
+}
 
 #page-container {
     position: relative;
@@ -47,7 +53,7 @@ h1, h2 {
         &:hover {
             background-color: $tertiary-color;
             border-color: $tertiary-color;
-            color: $black;
+            color: $primary-color;
         }
     }
 
@@ -61,6 +67,23 @@ h1, h2 {
             background-color: $primary-color;
         }
     }
+
+    &.btn-icon {
+        display: inline-flex;
+
+        i {
+            font-size: 22px;
+            padding-left: 6px;
+            display: flex;
+            align-self: flex-end;
+        }
+    }
+}
+.row-spacer {
+    margin-top: 1rem;
+}
+.extra-p-margin {
+    margin-bottom: 1.3rem;
 }
 
 /* header */
@@ -70,6 +93,11 @@ header {
 li.nav-item {
     padding-left: 24px;
     padding-right: 24px;
+}
+.navbar {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: $tertiary-color;
 }
 .navbar-light .navbar-nav .nav-link {
     color: rgba($primary-color, .8);
@@ -97,6 +125,11 @@ li.nav-item {
     }
 }
 
+i#theIcon {
+    text-align: center;
+    width: 21px;
+}
+
 /* main */
 .hero {
     background-image: url('../images/background.png');
@@ -113,8 +146,12 @@ li.nav-item {
 
 .recent-work {
     .container {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        margin-top: 16px;
     }
 
     .middle-section {
@@ -122,8 +159,8 @@ li.nav-item {
         border-bottom: 1px solid rgba($black, .2);
     }
 
-    h2 {
-        margin-top: 24px;
+    img {
+        border-radius: 4px;
     }
 }
 
@@ -137,10 +174,66 @@ li.nav-item {
     border-radius: 100px;
     padding: 4px 12px;
     font-size: 12px;
-    margin: 0 2px;
+    margin: 8px 2px 0;
 
     &:first-of-type {
         margin-left: 0;
+    }
+}
+
+/* about page */
+.bio {
+    
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba($black, .2);
+    }
+
+    .title {
+        font-style: italic;
+        font-weight: $light-weight;
+    }
+
+    img {
+        border-radius: 4px;
+    }
+
+    .about-text {
+        margin-top: 16px;
+    }
+}
+
+.resume {
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    } 
+
+    h3 {
+        font-weight: $bold-weight;
+        font-family: $bold-font;
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        margin-top: 24px;
+        margin-bottom: 6px;
+        font-family: $normal-font;
+        font-weight: $normal-weight;
+
+        &.first {
+            margin-top: 12px;
+        }
+    }
+
+    .info {
+        p {
+            margin-bottom: 2px;
+            font-size: 13px;
+        }
     }
 }
 
@@ -176,8 +269,6 @@ footer {
 }
 
 
-
-
 /* media queries */
 @media(min-width: 776px) {
     .hero {
@@ -191,6 +282,27 @@ footer {
     .recent-work {
         h2 {
             margin-top: 0;
+        }
+        .container {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    }
+    .bio {
+    
+        .container {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    
+        .about-text {
+            margin-top: 0;
+        }
+    }
+    .skills {
+        .container {
+            padding-top: 70px;
+            padding-bottom: 70px;
         }
     }
 }
