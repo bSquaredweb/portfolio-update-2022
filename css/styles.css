@@ -14,7 +14,7 @@ h1, h2 {
 }
 
 .h3, h3 {
-  font-size: calc(1.1rem + 0.6vw);
+  font-size: calc(1.2rem + 0.6vw);
 }
 
 .h4, h4 {
@@ -28,6 +28,11 @@ h1, h2 {
 
 #content-wrap {
   padding-bottom: 92px;
+}
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .btn.btn-primary {
@@ -57,14 +62,6 @@ h1, h2 {
   padding-left: 6px;
   display: flex;
   align-self: flex-end;
-}
-
-.row-spacer {
-  margin-top: 1rem;
-}
-
-.extra-p-margin {
-  margin-bottom: 1.3rem;
 }
 
 /* header */
@@ -127,13 +124,6 @@ i#theIcon {
   padding: 6rem 0 3rem;
 }
 
-.recent-work .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.recent-work h2 {
-  margin-top: 16px;
-}
 .recent-work .middle-section {
   border-top: 1px solid rgba(41, 41, 41, 0.2);
   border-bottom: 1px solid rgba(41, 41, 41, 0.2);
@@ -160,8 +150,6 @@ i#theIcon {
 
 /* about page */
 .bio .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
   border-bottom: 1px solid rgba(41, 41, 41, 0.2);
 }
 .bio .title {
@@ -171,14 +159,7 @@ i#theIcon {
 .bio img {
   border-radius: 4px;
 }
-.bio .about-text {
-  margin-top: 16px;
-}
 
-.resume .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 .resume h3 {
   font-weight: 600;
   font-family: "Poppins Semibold", sans-serif;
@@ -192,12 +173,65 @@ i#theIcon {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-.resume h4.first {
-  margin-top: 12px;
-}
 .resume .info p {
   margin-bottom: 2px;
   font-size: 13px;
+}
+
+/* case study pages */
+#project .card {
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  border: 0;
+  background-color: #ffffff;
+}
+#project .card-body {
+  padding: 0.75rem 0 0.25rem;
+}
+#project .card-text {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.case-study-heading .container {
+  padding-bottom: 24px;
+}
+.case-study-heading .background {
+  background-color: rgba(165, 228, 220, 0.4);
+  padding: 24px 24px 8px;
+  border-radius: 4px;
+}
+.case-study-heading .background h2 {
+  font-size: 1.325rem;
+}
+.case-study-heading .background p, .case-study-heading .background li {
+  font-size: 0.8rem;
+}
+
+.case-study .container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.case-study h3 {
+  font-weight: 600;
+  font-family: "Poppins Semibold", sans-serif;
+  color: #2c306f;
+  border-bottom: 2px solid #2c306f;
+  text-transform: uppercase;
+}
+.case-study .background {
+  background-color: rgba(165, 228, 220, 0.4);
+  border-radius: 4px;
+  height: 100%;
+}
+.case-study .background.auto {
+  height: auto;
+}
+.case-study .solution {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins Semibold", sans-serif;
 }
 
 /* footer */
@@ -233,32 +267,27 @@ footer i {
     padding-right: 1rem !important;
   }
 
-  .recent-work h2 {
-    margin-top: 0;
-  }
-  .recent-work .container {
+  .container {
     padding-top: 70px;
     padding-bottom: 70px;
   }
 
-  .bio .container {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .bio .about-text {
-    margin-top: 0;
+  .case-study-heading .container {
+    padding-bottom: 40px;
   }
 
-  .skills .container {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  .case-study .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
-@media (min-width: 992px) {
-  .hero .hero-info {
-    margin: 5rem auto;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+@media (min-width: 1200px) {
+  .h3, h3 {
+    font-size: 1.5rem;
+  }
+
+  .h4, h4 {
+    font-size: 1.25rem;
   }
 }
 

@@ -28,7 +28,7 @@ h1, h2 {
     font-weight: $bold-weight;
 }
 .h3, h3 {
-    font-size: calc(1.1rem + .6vw);
+    font-size: calc(1.2rem + .6vw);
 }
 .h4, h4 {
     font-size: calc(1rem + 0.2vw);
@@ -41,6 +41,11 @@ h1, h2 {
 
 #content-wrap {
     padding-bottom: 92px;
+}
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
   
 .btn {
@@ -78,12 +83,6 @@ h1, h2 {
             align-self: flex-end;
         }
     }
-}
-.row-spacer {
-    margin-top: 1rem;
-}
-.extra-p-margin {
-    margin-bottom: 1.3rem;
 }
 
 /* header */
@@ -145,15 +144,6 @@ i#theIcon {
 }
 
 .recent-work {
-    .container {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    h2 {
-        margin-top: 16px;
-    }
-
     .middle-section {
         border-top: 1px solid rgba($black, .2);
         border-bottom: 1px solid rgba($black, .2);
@@ -185,8 +175,6 @@ i#theIcon {
 .bio {
     
     .container {
-        padding-top: 40px;
-        padding-bottom: 40px;
         border-bottom: 1px solid rgba($black, .2);
     }
 
@@ -198,17 +186,9 @@ i#theIcon {
     img {
         border-radius: 4px;
     }
-
-    .about-text {
-        margin-top: 16px;
-    }
 }
 
 .resume {
-    .container {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    } 
 
     h3 {
         font-weight: $bold-weight;
@@ -223,10 +203,6 @@ i#theIcon {
         margin-bottom: 6px;
         font-family: $normal-font;
         font-weight: $normal-weight;
-
-        &.first {
-            margin-top: 12px;
-        }
     }
 
     .info {
@@ -234,6 +210,73 @@ i#theIcon {
             margin-bottom: 2px;
             font-size: 13px;
         }
+    }
+}
+
+/* case study pages */
+#project {
+    .card {
+        border-radius: 4px;
+        box-shadow: 1px 1px 8px rgb(0 0 0 / 10%);
+        padding: 0.5rem;
+        border: 0;
+        background-color: $white;
+    }
+    .card-body {
+        padding: 0.75rem 0 0.25rem;
+    }
+    .card-text {
+        font-size: 13px;
+        font-style: italic;
+    }
+}
+
+.case-study-heading {
+    .container {
+        padding-bottom: 24px;
+    }
+    .background {
+        background-color: rgba($secondary-color, .4);
+        padding: 24px 24px 8px;
+        border-radius: 4px;
+
+        h2 {
+            font-size: 1.325rem;
+        }
+
+        p, li {
+            font-size: .8rem;
+        }
+    }
+}
+
+.case-study {
+    .container {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    h3 {
+        font-weight: $bold-weight;
+        font-family: $bold-font;
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+        text-transform: uppercase;
+    }
+
+    .background {
+        background-color: rgba($secondary-color, .4);
+        border-radius: 4px; 
+        height: 100%;
+
+        &.auto {
+            height: auto;
+        }
+    }
+
+    .solution {
+        text-transform: uppercase;
+        font-weight: $bold-weight;
+        font-family: $bold-font;
     }
 }
 
@@ -279,40 +322,27 @@ footer {
             padding-right: 1rem !important;
         }
     }
-    .recent-work {
-        h2 {
-            margin-top: 0;
-        }
+    .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .case-study-heading {
         .container {
-            padding-top: 70px;
-            padding-bottom: 70px;
+            padding-bottom: 40px;
         }
     }
-    .bio {
-    
+    .case-study {
         .container {
-            padding-top: 70px;
-            padding-bottom: 70px;
-        }
-    
-        .about-text {
-            margin-top: 0;
-        }
-    }
-    .skills {
-        .container {
-            padding-top: 70px;
-            padding-bottom: 70px;
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
     }
 }
-@media(min-width: 992px) {
-    .hero {
-
-        .hero-info {
-            margin: 5rem auto;
-            padding-left: 1rem !important;
-            padding-right: 1rem !important;
-        }
+@media(min-width: 1200px) {
+    .h3, h3 {
+        font-size: 1.5rem;
+    }
+    .h4, h4 {
+        font-size: 1.25rem;
     }
 }
