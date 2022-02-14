@@ -185,6 +185,7 @@ i#theIcon {
   padding: 0.5rem;
   border: 0;
   background-color: #ffffff;
+  height: 100%;
 }
 #project .card-body {
   padding: 0.75rem 0 0.25rem;
@@ -192,6 +193,10 @@ i#theIcon {
 #project .card-text {
   font-size: 13px;
   font-style: italic;
+}
+#project h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .case-study-heading .container {
@@ -232,6 +237,13 @@ i#theIcon {
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Poppins Semibold", sans-serif;
+  font-style: normal !important;
+}
+.case-study .solution.small-bg {
+  background-color: rgba(165, 228, 220, 0.4);
+  display: inline-block;
+  padding: 0 4px;
+  border-radius: 2px;
 }
 
 /* footer */

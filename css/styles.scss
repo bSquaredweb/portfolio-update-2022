@@ -221,6 +221,7 @@ i#theIcon {
         padding: 0.5rem;
         border: 0;
         background-color: $white;
+        height: 100%;
     }
     .card-body {
         padding: 0.75rem 0 0.25rem;
@@ -228,6 +229,11 @@ i#theIcon {
     .card-text {
         font-size: 13px;
         font-style: italic;
+    }
+
+    h4 {
+        font-family: $normal-font;
+        font-weight: $normal-weight;
     }
 }
 
@@ -277,6 +283,14 @@ i#theIcon {
         text-transform: uppercase;
         font-weight: $bold-weight;
         font-family: $bold-font;
+        font-style: normal !important;
+
+        &.small-bg {
+            background-color: rgba($secondary-color, .4);
+            display: inline-block;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
     }
 }
 
