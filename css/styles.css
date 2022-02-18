@@ -45,6 +45,13 @@ h1, h2 {
   border-color: #ffd048;
   color: #2c306f;
 }
+.btn.btn-link {
+  text-decoration: none;
+  color: #2c306f;
+}
+.btn.btn-link:hover {
+  color: rgba(44, 48, 111, 0.6);
+}
 .btn.btn-outline-secondary {
   color: #2c306f;
   border-color: #2c306f;
@@ -62,6 +69,10 @@ h1, h2 {
   padding-left: 6px;
   display: flex;
   align-self: flex-end;
+}
+
+.text-left, .text-right {
+  text-align: center;
 }
 
 /* header */
@@ -149,9 +160,6 @@ i#theIcon {
 }
 
 /* about page */
-.bio .container {
-  border-bottom: 1px solid rgba(41, 41, 41, 0.2);
-}
 .bio .title {
   font-style: italic;
   font-weight: 300;
@@ -160,6 +168,10 @@ i#theIcon {
   border-radius: 4px;
 }
 
+.resume .container {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.2);
+  border-top: 1px solid rgba(41, 41, 41, 0.2);
+}
 .resume h3 {
   font-weight: 600;
   font-family: "Poppins Semibold", sans-serif;
@@ -176,6 +188,23 @@ i#theIcon {
 .resume .info p {
   margin-bottom: 2px;
   font-size: 13px;
+}
+
+.featured .background {
+  background-color: rgba(165, 228, 220, 0.4);
+  padding: 24px 24px 8px;
+  border-radius: 4px;
+}
+.featured h3 {
+  font-weight: 600;
+  font-family: "Poppins Semibold", sans-serif;
+  color: #2c306f;
+  border-bottom: 2px solid #2c306f;
+  text-transform: uppercase;
+}
+.featured .btn.btn-icon i {
+  font-size: 17px;
+  align-self: center;
 }
 
 /* case study pages */
@@ -218,6 +247,9 @@ i#theIcon {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.case-study .container.footer-nav {
+  padding-top: 0;
+}
 .case-study h3 {
   font-weight: 600;
   font-family: "Poppins Semibold", sans-serif;
@@ -244,6 +276,9 @@ i#theIcon {
   display: inline-block;
   padding: 0 4px;
   border-radius: 2px;
+}
+.case-study .prototype {
+  height: 300px;
 }
 
 /* footer */
@@ -273,6 +308,14 @@ footer i {
 
 /* media queries */
 @media (min-width: 776px) {
+  .text-left {
+    text-align: left;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
   .hero .hero-info {
     margin: 5rem auto;
     padding-left: 1rem !important;
@@ -291,6 +334,10 @@ footer i {
   .case-study .container {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .prototype {
+    height: 650px !important;
   }
 }
 @media (min-width: 1200px) {
