@@ -67,7 +67,7 @@ h1, h2 {
         color: $primary-color;
 
         &:hover {
-            color: rgba($primary-color, .6);
+            background-color: rgba($secondary-color, .4);
         }
     }
 

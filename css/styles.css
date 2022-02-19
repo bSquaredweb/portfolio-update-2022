@@ -50,7 +50,7 @@ h1, h2 {
   color: #2c306f;
 }
 .btn.btn-link:hover {
-  color: rgba(44, 48, 111, 0.6);
+  background-color: rgba(165, 228, 220, 0.4);
 }
 .btn.btn-outline-secondary {
   color: #2c306f;
