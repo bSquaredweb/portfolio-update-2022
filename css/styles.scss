@@ -87,7 +87,7 @@ h1, h2 {
 
         i {
             font-size: 22px;
-            padding-left: 6px;
+            padding-left: 8px;
             display: flex;
             align-self: flex-end;
         }
@@ -241,10 +241,13 @@ i#theIcon {
         border-bottom: 2px solid $primary-color;
         text-transform: uppercase;
     }
+}
 
+.resume, .featured {
     .btn.btn-icon i {
         font-size: 17px;
         align-self: center;
+        padding-left: 8px;
     }
 }
 
