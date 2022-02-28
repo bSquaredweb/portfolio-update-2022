@@ -35,6 +35,10 @@ h1, h2 {
   padding-bottom: 40px;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .btn.btn-primary {
   background-color: #2c306f;
   border-color: #2c306f;
