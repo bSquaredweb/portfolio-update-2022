@@ -166,7 +166,7 @@ i#theIcon {
         border-bottom: 1px solid rgba($black, .2);
     }
 
-    img {
+    .img-fluid {
         border-radius: 4px;
     }
 }
@@ -187,6 +187,28 @@ i#theIcon {
         margin-left: 0;
     }
 }
+
+#home {
+    .card {
+        box-shadow: 0 0 1rem rgb(0 0 0 / 10%);
+        border: 0;
+        background-color: $white;
+        height: 100%;
+
+        .h2, h2 {
+            font-size: calc(1rem + 0.2vw);
+            font-family: $normal-font;
+            font-weight: $normal-weight;
+        }
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+}
+
 
 /* about page */
 .bio {
@@ -258,8 +280,8 @@ i#theIcon {
 /* case study pages */
 #project {
     .card {
-        border-radius: 4px;
-        box-shadow: 1px 1px 8px rgb(0 0 0 / 10%);
+        border-radius: .25rem;
+        box-shadow: 0 0 1rem rgb(0 0 0 / 10%);
         padding: 0.5rem;
         border: 0;
         background-color: $white;
@@ -281,12 +303,11 @@ i#theIcon {
 
 .case-study-heading {
     .container {
-        padding-bottom: 24px;
+        padding-bottom: 32px;
     }
     .background {
         background-color: rgba($secondary-color, .4);
         padding: 24px 24px 8px;
-        border-radius: 4px;
 
         h2 {
             font-size: 1.325rem;
@@ -300,8 +321,8 @@ i#theIcon {
 
 .case-study {
     .container {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
 
         &.footer-nav {
             padding-top: 0;
@@ -363,6 +384,8 @@ footer {
     a {
         i {
             color: $white;
+            padding-left: 5px;
+            padding-right: 5px;
 
             &:hover {
                 color: $tertiary-color;
@@ -377,6 +400,14 @@ footer {
 
 
 /* media queries */
+@media (min-width: 480px) {
+    .case-study-heading {
+        .background {
+            border-radius: 4px;
+        }
+    }
+}
+
 @media(min-width: 776px) {
     .text-left {
         text-align: left;
@@ -399,13 +430,13 @@ footer {
     }
     .case-study-heading {
         .container {
-            padding-bottom: 40px;
+            padding-bottom: 56px;
         }
     }
     .case-study {
         .container {
-            padding-top: 40px;
-            padding-bottom: 40px;
+            padding-top: 56px;
+            padding-bottom: 56px;
         }
     }
     .prototype {
@@ -418,5 +449,13 @@ footer {
     }
     .h4, h4 {
         font-size: 1.25rem;
+    }
+
+    #home {
+        .card {
+            .h2, h2 {
+                font-size: 1.25rem;
+            }
+        }
     }
 }

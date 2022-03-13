@@ -143,7 +143,7 @@ i#theIcon {
   border-top: 1px solid rgba(41, 41, 41, 0.2);
   border-bottom: 1px solid rgba(41, 41, 41, 0.2);
 }
-.recent-work img {
+.recent-work .img-fluid {
   border-radius: 4px;
 }
 
@@ -161,6 +161,24 @@ i#theIcon {
 }
 .bubble:first-of-type {
   margin-left: 0;
+}
+
+#home .card {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  border: 0;
+  background-color: #ffffff;
+  height: 100%;
+}
+#home .card .h2, #home .card h2 {
+  font-size: calc(1rem + 0.2vw);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+#home .card-body {
+  padding: 1rem;
+}
+#home .card-text {
+  font-size: 14px;
 }
 
 /* about page */
@@ -215,8 +233,8 @@ i#theIcon {
 
 /* case study pages */
 #project .card {
-  border-radius: 4px;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   border: 0;
   background-color: #ffffff;
@@ -235,12 +253,11 @@ i#theIcon {
 }
 
 .case-study-heading .container {
-  padding-bottom: 24px;
+  padding-bottom: 32px;
 }
 .case-study-heading .background {
   background-color: rgba(165, 228, 220, 0.4);
   padding: 24px 24px 8px;
-  border-radius: 4px;
 }
 .case-study-heading .background h2 {
   font-size: 1.325rem;
@@ -250,8 +267,8 @@ i#theIcon {
 }
 
 .case-study .container {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .case-study .container.footer-nav {
   padding-top: 0;
@@ -304,6 +321,8 @@ footer p {
 }
 footer a i {
   color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 footer a i:hover {
   color: #ffd048;
@@ -313,6 +332,11 @@ footer i {
 }
 
 /* media queries */
+@media (min-width: 480px) {
+  .case-study-heading .background {
+    border-radius: 4px;
+  }
+}
 @media (min-width: 776px) {
   .text-left {
     text-align: left;
@@ -334,12 +358,12 @@ footer i {
   }
 
   .case-study-heading .container {
-    padding-bottom: 40px;
+    padding-bottom: 56px;
   }
 
   .case-study .container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
   .prototype {
@@ -352,6 +376,10 @@ footer i {
   }
 
   .h4, h4 {
+    font-size: 1.25rem;
+  }
+
+  #home .card .h2, #home .card h2 {
     font-size: 1.25rem;
   }
 }
